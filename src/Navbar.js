@@ -14,8 +14,13 @@ const Navbar = () => {
 
                 <ul className="" id="homepage-nav">
                  <li className="mx-5">
-                 <Link className="nav-link active" to="/login">
-                  Login 
+                 <Link className="nav-link active" to="/">
+                  Home  
+                </Link> 
+                </li>
+                 <li className="mx-5">
+                 <Link className="nav-link active" to="/about">
+                  About  
                 </Link> 
                 </li>
               <li className="mx-5">
