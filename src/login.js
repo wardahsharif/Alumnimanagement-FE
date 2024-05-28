@@ -1,34 +1,31 @@
 import React from 'react';
+import './login.css';
+import Navbar from './Navbar';
 
 
-
-function Login () {
+const Login = () => {
+   
     return(
-        <div className="container pt-5 pb-5 border rounded mt-5">
-            <h1>Login</h1>
-            <div>
+        <div>
 
-    <input 
-    type="inputEmail" 
-    className="form-control mt-4" 
-    aria-describedby="emailHelp" 
-    placeholder="Username"
-    name='email'
-    />
-   </div>
+      <Navbar/>   
+ <div className="container pt-2 pb-5 border rounded ">
+            <h1 className="p-3">Login</h1>
 
-     <div className="form-group p-2">
+     <div class="mb-3">
 
-    <input 
-    type="password" 
-    className="form-control mt-4" 
-    placeholder="Password"
-     password='password'
-  />
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username"/>
+</div>
+<div class="mb-2"> 
 
+  <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password"/>
+</div>
+<div className="pt-4 text-center">
+  Dont have an account? <a href="signup">signup</a>
   </div>
-
    </div>
+
+   </div> 
     )
 }
 
